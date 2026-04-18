@@ -17,14 +17,19 @@ body { margin:0; font-family:"CMU Serif", serif; }
   height:90px;
   display:flex;
   align-items:center;
-  padding:0 20px;
+  padding:0 20px 0 40px;
   gap:25px;
 }
-.navbar a { color:white; text-decoration:none; } 
 
-.nav-left-space {
-  width: 120px;
+.nav-left-space { width:120px; }
+
+.nav-img {
+  height:60px;
+  width:auto;
+  object-fit:contain;
 }
+
+.navbar a { color:white; text-decoration:none; }
 
 .content { padding:40px; }
 </style>
@@ -37,13 +42,15 @@ body { margin:0; font-family:"CMU Serif", serif; }
 </div>
 
 <div class="navbar">
-    <div class="nav-left-space"></div>
-  
-    <a href="papers.html">Research</a>
-    <a href="projects.html">Ongoing Projects</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+  <div class="nav-left-space">
+    <img src="IMG_1858.jpeg" class="nav-img">
   </div>
+
+  <a href="papers.html">Research</a>
+  <a href="projects.html">Ongoing Projects</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
 
 <div class="content">
 
