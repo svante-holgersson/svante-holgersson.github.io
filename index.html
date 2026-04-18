@@ -7,36 +7,98 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/css/cmun-serif.css">
 
   <style>
-    body { font-family: "CMU Serif", serif; margin: 0; }
-    nav { background-color: RoyalBlue; padding: 10px; }
-    nav a { color: white; margin-right: 15px; text-decoration: none; font-weight: bold; }
-    .content { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    body {
+      margin: 0;
+      font-family: "CMU Serif", serif;
+    }
+
+    .topbar {
+      background: white;
+      padding: 12px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .topbar a {
+      color: RoyalBlue;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .navbar {
+      background: RoyalBlue;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px 0 40px; /* dubbelt vänster-padding */
+      gap: 25px;
+    }
+
+    .nav-left-space {
+      width: 120px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    /* RUTOR (FIXAD HORIZONTAL LAYOUT) */
+    .grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      padding: 60px 20px;
+    }
+
+    .box {
+      width: 220px;
+      height: 160px;
+      border: 1px solid black;
+      background: white;
+    }
+
+    .nav-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    }
   </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
+<div class="topbar">
+  <a href="index.html">Svante Holgersson</a>
+</div>
+
+<div class="navbar">
+  <div class="nav-left-space">
+    <img src="IMG_1858.jpeg" class="nav-img">
+  </div>
+
+  <a href="papers.html">Research</a>
+  <a href="projects.html">Ongoing Projects</a>
   <a href="about.html">About</a>
-  <a href="papers.html">Papers</a>
-  <a href="projects.html">Projects</a>
-</nav>
+  <a href="contact.html">Contact</a>
+</div>
 
-<div class="content">
+<div class="hero">
+  <h1>Welcome to Svante Holgersson's website</h1>
+  <p>Here you find information about my research and ongoing work.</p>
+</div>
 
-<h1>Svante Holgersson</h1>
-
-<p>I am a student in fin-mathematics.</p>
-
-<p>
-If you are interested in my previous work and publications, see <a href="papers.html">here</a>.
-</p>
-
-<p>
-If you are interested in my ongoing work, see <a href="projects.html">here</a>.
-</p>
-
+<div class="grid">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
 </div>
 
 </body>

@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>About</title>
+<meta charset="UTF-8">
+<title>About</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/css/cmun-serif.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/css/cmun-serif.css">
 
-  <style>
-    body { font-family: "CMU Serif", serif; margin: 0; }
-    nav { background-color: RoyalBlue; padding: 10px; }
-    nav a { color: white; margin-right: 15px; text-decoration: none; font-weight: bold; }
-    .content { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-  </style>
+<style>
+body { margin:0; font-family:"CMU Serif", serif; }
+
+.topbar {
+  background:white;
+  padding:12px 20px;
+  border-bottom:1px solid #ddd;
+}
+.topbar a { color:RoyalBlue; text-decoration:none; font-size:18px; }
+
+.navbar {
+  background:RoyalBlue;
+  height:90px;
+  display:flex;
+  align-items:center;
+  padding:0 20px;
+  gap:25px;
+}
+.navbar a { color:white; text-decoration:none; }
+
+.nav-left-space {
+  width: 120px;
+}
+
+.content { padding:40px; }
+</style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
+<div class="topbar">
+  <a href="index.html">Svante Holgersson</a>
+</div>
+
+<div class="navbar">
+  <div class="nav-left-space"></div>
+
+  <a href="papers.html">Research</a>
+  <a href="projects.html">Ongoing Projects</a>
   <a href="about.html">About</a>
-  <a href="papers.html">Papers</a>
-  <a href="projects.html">Projects</a>
-</nav>
+  <a href="contact.html">Contact</a>
+</div>
 
 <div class="content">
 
 <h1>About Me</h1>
 
-<p>
-I am a Master's student in Mathematics.
-</p>
-
-<p>
-I am also a student in the Master of Science in Engineering Physics.
-</p>
-
-<p>
-In addition, I am a student in the Bachelor's Programme in Business and Economics, with a specialization in Business Administration.
-</p>
+<p>Master's Programme in Mathematics.</p>
+<p>Master's Programme in Engineering Physics.</p>
+<p>Bachelor's Programme in Economics (Major in Business Administration, Specialisation in Advanced Financial Accounting).</p>
 
 <h2>Teaching</h2>
-
 <ul>
-  <li>Introduction to Mathematics (4 times)</li>
-  <li>Discrete Mathematics</li>
-  <li>Perspectives on Mathematics</li>
-  <li>Single Variable Calculus</li>
-  <li>Mathematics for Economists</li>
+<li>Introduction to Mathematics (4 times)</li>
+<li>Discrete Mathematics</li>
+<li>Perspectives on Mathematics</li>
+<li>Single Variable Calculus</li>
+<li>Mathematics for Economists</li>
 </ul>
 
 </div>
