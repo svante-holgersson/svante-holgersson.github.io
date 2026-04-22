@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Svante Holgersson</title>
 
-  
   <style>
     @font-face {
       font-family: 'CMU Serif';
@@ -24,8 +23,6 @@
       src: url('fonts/cmunti.woff') format('woff');
       font-style: italic;
     }
-
-
 
     body {
       margin: 0;
@@ -49,7 +46,7 @@
       height: 90px;
       display: flex;
       align-items: center;
-      padding: 0 20px 0 40px; /* dubbelt vänster-padding */
+      padding: 0 20px 0 40px;
       gap: 25px;
     }
 
@@ -68,7 +65,7 @@
       padding: 60px 20px;
     }
 
-    /* RUTOR (FIXAD HORIZONTAL LAYOUT) */
+    /* RUTOR */
     .grid {
       display: flex;
       flex-direction: row;
@@ -82,12 +79,28 @@
       height: 160px;
       border: 1px solid black;
       background: white;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+    }
+
+    .box h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .box p {
+      margin-top: 8px;
+      font-size: 14px;
     }
 
     .nav-img {
-    height: 60px;
-    width: auto;
-    object-fit: contain;
+      height: 60px;
+      width: auto;
+      object-fit: contain;
     }
   </style>
 </head>
@@ -115,10 +128,27 @@
 </div>
 
 <div class="grid">
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
+  <div class="box">
+    <h3>Ongoing Research</h3>
+    <p> Här undersöks vilket samband som finns
+      mellan förändringar i finansiell prestation och tonaliteten i VD-ord hos stora svenska börs-
+      bolag.</p>
+  </div>
+
+  <div class="box">
+    <h3>Rubrik 2</h3>
+    <p>Din text här.</p>
+  </div>
+
+  <div class="box">
+    <h3>Rubrik 3</h3>
+    <p>Din text här.</p>
+  </div>
+
+  <div class="box">
+    <h3>Rubrik 4</h3>
+    <p>Din text här.</p>
+  </div>
 </div>
 
 </body>
